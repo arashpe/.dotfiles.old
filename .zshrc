@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/hidden/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,7 +106,7 @@ eval "$(starship init zsh)"
 # export PATH="/usr/local/anaconda/bin:$PATH"
 
 # added by gem installer
-export PATH="/home/hidden/.local/share/gem/ruby/3.0.0/bin:$PATH"
+export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 
 #add my custom commands
 source ~/.custom_commands.sh

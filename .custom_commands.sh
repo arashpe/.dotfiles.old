@@ -25,6 +25,19 @@ function phpm() {
 function py() {
 	python $@
 }
+function http() {
+	python -m http.server 
+}
 function penv() {
 	python -m venv $@
+}
+#xampp 
+function xstart() {
+	sudo xampp start
+}
+function xstop() {
+	sudo xampp stop
+}
+function xrestart() {
+	sudo xampp restart
 }

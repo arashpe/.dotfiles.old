@@ -10,7 +10,7 @@ nitrogen --restore &
 
 # polybar
 
-~/.config/polybar/launch.sh --colorblocks &
+# ~/.config/polybar/launch.sh --colorblocks &
 
 
 # compositing and wallpaper 

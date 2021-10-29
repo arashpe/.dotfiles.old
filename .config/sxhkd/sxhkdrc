@@ -1,6 +1,9 @@
 #  ------ programs  -------- # 
 
-super + Return
+ssuper + Return
+	qterminal
+
+uper + Return
 	kitty
 
 super + r

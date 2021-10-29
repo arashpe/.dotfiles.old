@@ -1,31 +1,31 @@
-#  ------ programs  -------- # 
+#  ------ programs  -------- #
 
-ssuper + Return
+super + Return
 	qterminal
 
-uper + Return
+super + Return
 	kitty
 
 super + r
 	dmenu_run
 
-# reload config (bspwmrc and sxhkdrc)  # 
+# reload config (bspwmrc and sxhkdrc)  #
 
 super + shift + r
 	pkill -USR1 -x kitty
 
 super + shift + e
-        bspc wm -r
+	bspc wm -r
 
-#  ------ brightness  -------- # 
+#  ------ brightness  -------- #
 
 XF86MonBrightnessUp
-    xbacklight -inc 10
+	xbacklight -inc 10
 
 XF86MonBrightnessDown
-    xbacklight -dec 10
+	xbacklight -dec 10
 
-#  ------------ bspwm hotkeys ------------ # 
+#  ------------ bspwm hotkeys ------------ #
 
 # quit/restart bspwm
 super + alt + {q,r}
@@ -46,7 +46,6 @@ super + y
 # swap the current node and the biggest node
 super + g
 	bspc node -s biggest
-
 
 # state/flags
 
@@ -82,8 +81,8 @@ super + {grave,Tab}
 
 # focus the older or newer node in the focus history
 super + {o,i}
-	bspc wm -h off; \
-	bspc node {older,newer} -f; \
+	bspc wm -h off
+bspc node {older,newer} -f
 	bspc wm -h on
 
 # focus or send to the given desktop
@@ -122,31 +121,31 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-
 super + m
-  bspc desktop -l next  # idk what this does 
-
+	bspc desktop -l next # idk what this does
 
 # -------------- take screenshots ------------- #
 
-
 #fullscreen screenshot save
 
-super + Print
-     maim "/home/$USER/Pictures/$(date)"
-
-#cropped save
-super + shift + x
-      maim --select "/home/$USER/Pictures/$(date)"
-
+Print
+	flameshot gui
 #  clipboard fullscreen
 super + u
-     maim | xclip -selection clipboard -t image/png
+	maim | xclip -selection clipboard -t image/png
 
 # clipboard cropped
 super + shift + u
-    maim --select | xclip -selection clipboard -t image/png
+	maim --select | xclip -selection clipboard -t image/png
 
 # Change keyboard language
 shift + F12
 	{setxkbmap ir, setxkbmap us}
+
+# Toggle floating
+super + d
+	if [ -z "$(bspc query -N -n focused.floating)" ]; then
+		bspc node focused -t floating
+	else
+		bspc node focused -t tiled
+	fi

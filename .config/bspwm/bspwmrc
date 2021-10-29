@@ -5,8 +5,8 @@ xsetroot -cursor_name left_ptr
 setxkbmap -layout us,ir &
 /usr/bin/lxpolkit &
 sxhkd &
-
 nitrogen --restore &
+flameshot &
 
 # polybar
 
@@ -30,6 +30,7 @@ bspc config gapless_monocle      true
 
 bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a mplayer2 state=floating
+bspc rule -a arduino state=floating
 #bspc rule -a /usr/bin/lxpolkit state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

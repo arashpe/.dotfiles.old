@@ -1,5 +1,9 @@
 #!/bin/bash
 
+#aliases
+
+alias vim='nvim'
+
 #system commands
 function zshrc() {
 	vim ~/.zshrc

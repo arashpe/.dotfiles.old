@@ -13,6 +13,9 @@ alias penv='python -m venv'
 alias xstart='sudo xampp start'
 alias xstop='sudo xampp stop'
 alias xrestart='sudo xampp restart'
+alias bspwmrc='vi ~/.config/bspwm/bspwmrc'
+alias picomrc='vi ~/.config/picom/picom.conf'
+alias sxrch='vi ~/.config/sxhkd/sxhkdrc'
 
 
 function phpm() {

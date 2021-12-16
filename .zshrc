@@ -70,7 +70,7 @@ ENABLE_CORRECTION="true"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git web-search)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,3 +111,4 @@ export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 #add my custom commands
 source ~/.custom_commands.sh
 
+export TERM=xterm-256color

@@ -2,14 +2,14 @@
 # First param ─┌
 [username]
 format = " [╭─$user]($style)@"
-style_user = "bold red"
-style_root = "bold red"
+style_user = "bold blue"
+style_root = "bold blue"
 show_always = true
 
 # Second param
 [hostname]
 format = "[$hostname]($style) in "
-style = "bold dimmed red"
+style = "bold dimmed blue"
 trim_at = "-"
 ssh_only = false
 disabled = false
@@ -44,9 +44,9 @@ charging_symbol = " "
 discharging_symbol = " "
 disabled = true
 
-[[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+[[battery.display]]  # "bold blue" style when capacity is between 0% and 10%
 threshold = 15
-style = "bold red"
+style = "bold blue"
 disabled = true
 
 [[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
@@ -68,8 +68,8 @@ disabled = false
 
 # Prompt: param 2 └─
 [character]
-success_symbol = " [╰─λ](bold red)"
-error_symbol = " [×](bold red)"
+success_symbol = " [╰─λ](bold blue)"
+error_symbol = " [×](bold blue)"
 
 # SYMBOLS
 [status]

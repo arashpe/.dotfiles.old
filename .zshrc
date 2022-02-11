@@ -111,4 +111,7 @@ export PATH="$HOME/.local/share/gem/ruby/3.0.0/bin:$PATH"
 #add my custom commands
 source ~/.custom_commands.sh
 
+#add fun stuff when start new terminal
+fortune | cowsay -f tux | lolcat --spread 1.0
+
 export TERM=xterm-256color

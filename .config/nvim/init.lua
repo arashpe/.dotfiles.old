@@ -1,2 +1,2 @@
-require "PiVim.options"
-require "PiVim.keymaps"
+require "PiVim/keymaps"
+require "PiVim/options"
